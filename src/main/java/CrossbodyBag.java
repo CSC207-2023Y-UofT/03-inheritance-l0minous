@@ -51,9 +51,11 @@
 
         @Override
         public String toString(){
-//            String parentString = super.toString();
-            return this.getColor() + " Crossbody Bag with" + this.numberOfStraps +"Straps" + this.getNumberOfContents() + " / " +
-                    this.getCapacity() + ")";
+            String x = super.toString();
+//            return this.getColor() + " Crossbody Bag with" + this.numberOfStraps +"Straps" + this.getNumberOfContents() + " / " +
+//                    this.getCapacity() + ")";
+            x = x.replace("Bag", "Crossbody Bag with " + numberOfStraps + " straps");
+            return x;
         }
 
     }
